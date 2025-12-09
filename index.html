@@ -7,14 +7,15 @@
     <title>tailwind css project</title>
     <!-- tailwindcss cdn link -->
     <link href=" https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css " rel="stylesheet">
+
 </head>
 
 <body>
     <!-- Responsive Navbar using Tailwind css -->
     <nav class="bg-green-100 p-3 flex justify-between item-center shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="h-6 w-6 md:hidden">
+        <svg id="sidenavbaricon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="h-6 w-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -31,6 +32,22 @@
             </li>
         </ul>
     </nav>
+    <!-- side navbar -->
+    <section id="sidenavbar" class="fixed z-20 top-0 -right-48 transition-all duration-1000" style="width: 200px;">
+        <ul class="flex flex-col gap-5 text-gray-600 bg-green-200 text-center " style="height: 100vh;">
+            <p class="text-right mr-2 cursor-pointer" id="close">X</p>
+
+            <li>
+                <a href="" class="hover:underline hover:text-black mt-10">Home</a>
+            </li>
+            <li>
+                <a href="./product.html" class="hover:underline hover:text-black mt-10">Products</a>
+            </li>
+            <li>
+                <a href="./contact.html" class="hover:underline hover:text-black mt-10">Contact</a>
+            </li>
+        </ul>
+    </section>
     <!-- header section  -->
     <div class="bg-green-100 p-4 flex justify-center items-center md:p-10 gap-20">
         <div>
@@ -127,37 +144,48 @@
         <h1 class="font-bold text-3xl text-center">Customer Reviews</h1>
         <div>
             <div class="bg-green-800 p-3 m-2">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a corporis temporibus iure minus eius, amet, in, itaque sequi fuga atque similique eveniet hic laudantium architecto quo debitis distinctio! Quidem?</p>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a corporis
+                    temporibus iure minus eius, amet, in, itaque sequi fuga atque similique eveniet hic laudantium
+                    architecto quo debitis distinctio! Quidem?</p>
                 <h2 class="font-bold text-yellow-400">Genny Mathew</h2>
             </div>
-             <div class="bg-green-800 p-3 m-2">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a corporis temporibus iure minus eius, amet, in, itaque sequi fuga atque similique eveniet hic laudantium architecto quo debitis distinctio! Quidem?</p>
+            <div class="bg-green-800 p-3 m-2">
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a corporis
+                    temporibus iure minus eius, amet, in, itaque sequi fuga atque similique eveniet hic laudantium
+                    architecto quo debitis distinctio! Quidem?</p>
                 <h2 class="font-bold text-yellow-400">Jim</h2>
             </div>
             <div class="bg-green-800 p-3 m-2">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a corporis temporibus iure minus eius, amet, in, itaque sequi fuga atque similique eveniet hic laudantium architecto quo debitis distinctio! Quidem?</p>
+                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque a corporis
+                    temporibus iure minus eius, amet, in, itaque sequi fuga atque similique eveniet hic laudantium
+                    architecto quo debitis distinctio! Quidem?</p>
                 <h2 class="font-bold text-yellow-400">amir</h2>
             </div>
         </div>
 
     </div>
     <!-- News Letter -->
-     <div class="text-center">
+    <div class="text-center">
         <h1 class="font-bold text-3xl mt-5">Join our News Letter</h1>
-     <p>Singup for our email newspaper to get exclusive discount, update and more</p>
-     <input type="text" class="border border-black m-2 p-2" style="width: 80%;"></input>
-     <div>
-<button class="bg-black text-white p-4 m-2 rounded-xl">Subcribe</button>
-     </div>
-     
+        <p>Singup for our email newspaper to get exclusive discount, update and more</p>
+        <input type="text" class="border border-black m-2 p-2 focus:outline-none" style="width: 80%;">
+        <div>
+            <button class="bg-black text-white p-4 m-2 rounded-xl">Subcribe</button>
+        </div>
+
     </div>
     <!-- Footer -->
-     <div class="bg-green-200 p-5">
+    <div class="bg-green-200 p-5">
         <h1 class="font-bold text-3xl ">Greenden</h1>
-        <p class="my-2">The Standard Chunk od lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <p class="my-2">The Standard Chunk od lorem ipsum used since the 1500s is reprodused below for those interest
+        </p>
         <p class="my-2">&copy; 2021 Greenday.com</p>
-     </div>
+    </div>
 
+    <!-- link script -->
+    <script src="index.js">
+
+    </script>
 </body>
 
 </html>
